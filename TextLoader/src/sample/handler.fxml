@@ -1,0 +1,27 @@
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<?import javafx.scene.control.Accordion?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" fx:id="borderPane">
+    <top >
+        <MenuBar>
+            <Menu text="Action" >
+                <items >
+                    <MenuItem text="Chose file" onAction="#choseFile"/>
+                    <SeparatorMenuItem />
+                </items>
+            </Menu>
+
+        </MenuBar>
+    </top>
+    <center>
+        <Accordion fx:id="accordion">
+
+        </Accordion>
+    </center>
+</BorderPane>
